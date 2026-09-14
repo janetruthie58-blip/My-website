@@ -1,0 +1,41 @@
+body {
+    background-color: lightblue;
+    font-family: arial, sans-serif;
+}
+
+div {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: black;
+}
+
+input {
+    width: 90%;
+    padding: 0px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
