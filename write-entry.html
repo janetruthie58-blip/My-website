@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dear Diary - Write Entry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dear Diary</h1>
+        <p>Write Your Diary Entry</p>
+    </header>
+
+    <main>
+        <h2>New Diary Entry</h2>
+
+        <label for="entry-title">Entry Title:</label>
+        <input type="text" id="entry-title" placeholder="Enter your title">
+
+        <label for="entry-date">Date:</label>
+        <input type="date" id="entry-date">
+
+        <label for="entry-content">Your Entry:</label>
+        <textarea id="entry-content" rows="10" placeholder="Write your thoughts here..."></textarea>
+
+        <button onclick="saveEntry()">Save Entry</button>
+        <button onclick="clearEntry()">Clear</button>
+        <button onclick="location.href='dashboard.html'">Back Dashboard</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dear Diary</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

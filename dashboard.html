@@ -3,34 +3,44 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Dear Diary - Dashboard</title>
+    <title>Dear Diary</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
+    <div>
         <h1>Dear Diary</h1>
-        <p>Welcome to your personal Diary</p>
-    </header>
+        <p>Welcome to your personal Diary.</p>
+        <h2>Write a Diary Entry</h2>
 
-    <main>
-        <h2>My Dashboard</h2>
 
-        <p>Welcome! This is your private space to write and keep your thoughts.</p>
+        <form id="diaryForm">
 
-        <div>
-            <button>Write New Entry</button>
-            <button>My Entries</button>
-            <button>Profile</button>
-            <button>Logout</button>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Dear Diary</p>
-    </footer>
+            <label>Title</label><br>
+            <input type="text" id="entryTitle" placeholder="Enter Entry title" required><br><br>
+
+            <label>Diary Entry</label><br><br>
+            <textarea id="entryText" placeholder="Write your thoughts here..." rows="10" cols="40" required></textarea><br><br>
+
+            <button type="submit">Save Entry</button>
+
+        </form>
+
+        <br>
+
+        <a href="index.html">Home</a>
+
+        <br><br>
+
+        <button onclick="viewEntry()">View My Entries</button>
+        <br><br>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="scripts.js"></script>
+
 </body>
 
 </html>
