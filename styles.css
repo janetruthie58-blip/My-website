@@ -5,13 +5,11 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 400px;
-    margin: 30px auto;
+    width: 100%;
+    min-width: 400px;
+    margin: 0px;
     padding: 25px;
     background-color: #fff8fb;
-    border: 2px solid #f3a6c8;
-    border-radius: 20px;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
@@ -125,4 +123,61 @@ textarea:focus {
 
 .nav-links a:hover {
     color: #ffd6e7;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-form {
+    width: 400px;
+    max-width: 90%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.login-form button {
+    display: block;
+    margin: 20px auto;
+}
+
+.registration-form {
+    width: 400px;
+    max-width: 90%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.registration-form button {
+    display: block;
+    margin: 20px auto;
 }

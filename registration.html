@@ -27,22 +27,22 @@
 
         <h1>registration</h1>
 
-        <form id="registrationForm" onsubmit="validateRegistration(event)">
+        <form class="registration-form">
 
-            <label>Full Name</label><br>
+            <label for="fullname">Full Name</label>
             <input type="text" id="fullname" placeholder="Enter your full name" pattern="[A-Za-z ]+" title="use letters and spaces only" required>
             <br><br>
 
 
-            <label>email</label><br>
+            <label for="email">Email</label>
             <input type="email" id="email" placeholder="Enter your email" required>
             <br><br>
 
-            <label>password</label><br>
+            <label for="password">Password</label>
             <input type="password" id="password" placeholder="create a password" minlength="8" required>
             <br><br>
 
-            <label>confirm password</label><br>
+            <label for="confirmPassword">Password</label>
             <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
             <br><br>
 
