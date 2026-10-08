@@ -10,26 +10,42 @@
 </head>
 
 <body>
-    <header>
-        <h1>Dear Diary</h1>
-        <p>My Profile</p>
-    </header>
-    <main>
-        <h2>Profile</h2>
+    <nav class="navbar">
+        <div class="logo">Dear Diary</div>
 
-        <p><strong>Name:</strong>Diary User</p>
-        <p><strong>Email:</strong>user@example.com</p>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="registration.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="entries.html"> My Entries</a>
+            <a href="profiles.html"> Profiles</a>
+            <a href="#" onclick="logout()">Logout</a>
 
-        <button onclick="changePassword()">change Password</button>
+        </div>
+    </nav>
 
-        <button onclick="location.href='dashboard.html'">Back to Dashboard</button>
-    </main>
+    <div class="container">
+        <header>
+            <h1>Dear Diary</h1>
+            <p>My Profile</p>
+        </header>
+        <main>
+            <h2>Profile</h2>
 
-    <footer>
-        <p>&copy; 2026 Dear Diary</p>
+            <p><strong>Name:</strong>Diary User</p>
+            <p><strong>Email:</strong>user@example.com</p>
 
-    </footer>
-    <script src="scripts.js"></script>
+            <button onclick="changePassword()">change Password</button>
+
+            <button onclick="location.href='dashboard.html'">Back to Dashboard</button>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Dear Diary</p>
+
+        </footer>
+        <script src="scripts.js"></script>
 </body>
 
 </html>

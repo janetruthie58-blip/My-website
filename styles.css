@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-div {
+.container {
     width: 90%;
     max-width: 400px;
     margin: 30px auto;
@@ -96,4 +96,33 @@ input:focus,
 textarea:focus {
     outline: none;
     border: 2px solid #d63384;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a5acd;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    background-color: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffd6e7;
 }
