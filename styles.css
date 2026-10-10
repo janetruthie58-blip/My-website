@@ -12,6 +12,7 @@ body {
     background-color: #fff8fb;
     text-align: center;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
 }
 
 h1 {
@@ -530,6 +531,27 @@ body {
         flex: auto;
     }
     .write-picture img {
-        height: 250px;
+        height: 250px
+    }
+}
+
+@media (max-width: 600px) {
+    body.login-page,
+    body.registration-page {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
+    .login-card,
+    .registration-card {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        box-sizing: border-box;
     }
 }
