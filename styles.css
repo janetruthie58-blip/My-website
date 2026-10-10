@@ -538,20 +538,22 @@ body {
 @media (max-width: 600px) {
     body.login-page,
     body.registration-page {
+        display: block;
+        position: relative;
         min-height: 100vh;
         min-height: 100dvh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 15px;
-        box-sizing: border-box;
+        padding: 0;
     }
-    .login-card,
-    .registration-card {
-        width: 100%;
+    body.login-page .login-card,
+    body.registration-page .registration-card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 30px);
         max-width: 400px;
-        margin: auto;
+        margin: 0;
         box-sizing: border-box;
+        z-index: 2;
     }
 }
