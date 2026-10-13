@@ -19,42 +19,48 @@
             <a href="login.html">Login</a>
             <a href="dashboard.html">Dashboard</a>
             <a href="entries.html"> My Entries</a>
-            <a href="profiles.html"> Profiles</a>
+            <a href="profile.html"> Profile</a>
             <a href="#" onclick="logout()">Logout</a>
 
         </div>
     </nav>
+    <main class="dashboard-layout">
+        <aside class="dashboard-picture">
+            <img src="./image/dashboard-bg.jpg" alt="A beautiful diary with flowers">
+        </aside>
 
-    <div class="container">
-
-        <h1>Dear Diary</h1>
-        <p>Welcome to your personal Diary.</p>
-        <h2>Write a Diary Entry</h2>
+        <div class="container">
 
 
-        <form id="diaryForm">
+            <h1>Dear Diary</h1>
+            <p>Welcome to your personal Diary.</p>
+            <h2>Write a Diary Entry</h2>
 
-            <label>Title</label><br>
-            <input type="text" id="entryTitle" placeholder="Enter Entry title" required><br><br>
 
-            <label>Diary Entry</label><br><br>
-            <textarea id="entryText" placeholder="Write your thoughts here..." rows="10" cols="40" required></textarea><br><br>
+            <form id="diaryForm">
 
-            <button type="submit">Save Entry</button>
+                <label>Title</label><br>
+                <input type="text" id="entryTitle" placeholder="Enter Entry title" required><br><br>
 
-        </form>
+                <label>Diary Entry</label><br><br>
+                <textarea id="entryText" placeholder="Write your thoughts here..." rows="10" cols="40" required></textarea><br><br>
 
-        <br>
+                <button type="submit">Save Entry</button>
 
-        <a href="index.html">Home</a>
+            </form>
 
-        <br><br>
+            <br>
 
-        <button onclick="viewEntry()">View My Entries</button>
-        <br><br>
+            <a href="index.html">Home</a>
 
-        <button onclick="logout()">Logout</button>
-    </div>
+            <br><br>
+
+            <button onclick="viewEntry()">View My Entries</button>
+            <br><br>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+    </main>
 
     <script src="scripts.js"></script>
 
